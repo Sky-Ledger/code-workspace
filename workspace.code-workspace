@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../"
+		}
+	],
+	"settings": {
+		"powershell.scriptAnalysis.enable": true,
+		"powershell.scriptAnalysis.settingsPath": "sky-ledger/powershell-script-analyzer/PSScriptAnalyzer.Settings.psd1",
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.powershell"
+		]
+	}
+}
