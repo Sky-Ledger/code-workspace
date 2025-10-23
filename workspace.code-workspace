@@ -5,12 +5,21 @@
 		}
 	],
 	"settings": {
+		"files.trimTrailingWhitespace": true,
 		"powershell.scriptAnalysis.enable": true,
 		"powershell.scriptAnalysis.settingsPath": "sky-ledger/powershell-script-analyzer/PSScriptAnalyzer.Settings.psd1",
+		"[powershell]": { 						// for powershell files only
+			"editor.defaultFormatter": "ms-vscode.powershell", // use the PowerShell extension for formatting
+			"editor.insertSpaces": true,        // insert spaces when pressing Tab
+			"editor.rulers": [140],             // show vertical ruler at 140 characters
+			"editor.tabSize": 2,				// tab size of 2 spaces
+			"editor.trimAutoWhitespace": true,  // trim auto inserted whitespace
+			"files.encoding": "utf8bom"			// use UTF-8 with BOM encoding for cross platform compatibility
+		}
 	},
 	"extensions": {
 		"recommendations": [
-			"ms-vscode.powershell"
+			"ms-vscode.powershell" 				// used to format powershell files
 		]
 	}
 }
